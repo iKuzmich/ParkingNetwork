@@ -1,0 +1,30 @@
+<div lass="m-a-1">
+  <h3 class="bg-primary p-a-1">Parking Online App</h3>
+
+  <div id="gridContainer">
+    <div class="row">
+      <div class="col-md-2">
+        <ul>
+          <li class="page__navigator__menu-item">
+            <span (click)="onSellingSlotsSelected()">
+              <a routerLink="">Selling Slots</a>
+            </span>
+          </li>
+          <li class="page__navigator__menu-item">
+            <span (click)="onSellSelected()">
+              <a routerLink="/sell">Sell</a>
+            </span>
+          </li>
+          <li class="page__navigator__menu-item">
+            <span (click)="onBuySelected()">
+              <a routerLink="/buy">Buy</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10">
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
